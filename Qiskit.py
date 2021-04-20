@@ -24,7 +24,7 @@ circuit.measure([0,1], [0,1])
 compiled_circuit = transpile(circuit, simulator)
 
 # Execute the circuit on the qasm simulator
-job = simulator.run(compiled_circuit, shots=1000)
+job = simulator.run(compiled_circuit, shots=1000000)
 
 # Grab results from the job
 result = job.result()
